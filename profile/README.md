@@ -98,7 +98,7 @@ SeerAPI 提供 **50+ 种游戏资源类型**，包括但不限于：
 - 🛡️ **装备**：装备属性、套装效果
 - 💎 **刻印**：刻印效果、宝石等
 - 🌟 **特性**：精灵特性、特质等
-- 📜 更多资源请查看[API 根目录索引](https://api.seerapi.com/v1/)，文档补充中...
+- 📜 更多资源请查看[API 参考](https://api.seerapi.com/docs/v1/api_reference.html)，文档补充中...
 
 每个资源类型都有对应的Schema定义，访问[https://api.seerapi.com/v1/schemas/{resource_name}/$id](https://api.seerapi.com/v1/schemas/{resource_name}/$id)查看。
 ## 🤝 贡献
