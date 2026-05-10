@@ -22,42 +22,6 @@
 - 🛠️ **工具链生态**：构建完整的数据处理工具链，从资源提取到 API 服务
 - 🤝 **社区驱动**：这是一项庞大且需要持续维护的项目，欢迎社区贡献解析器、数据补丁和工具改进
 
-## 📦 核心仓库
-
-### 🔧 数据处理工具
-
-| 仓库 | 描述 | 技术栈 | 状态 |
-|------|------|--------|------|
-| [**Solaris**](https://github.com/SeerAPI/solaris) | 核心数据解析/整理工具，支持三平台数据解析 | Python | ✅ 活跃 |
-| [**Albi0**](https://github.com/SeerAPI/albi0) | 插件化的 Unity 游戏资源提取工具 | Python | ✅ 稳定 |
-
-### 📚 数据与模型
-
-| 仓库 | 描述 | 技术栈 | 状态 |
-|------|------|--------|------|
-| [**seerapi-models**](https://github.com/SeerAPI/seerapi-models) | 标准数据模型和 ORM 定义 | Python, Pydantic | ✅ 活跃 |
-| [**config-sources**](https://github.com/SeerAPI/config-sources) | 赛尔号客户端源数据仓库 | 数据文件 | ✅ 自动 |
-| [**patch-sources**](https://github.com/SeerAPI/patch-sources) | 数据补丁，用于修复源数据中的错误 | 补丁文件 | ✅ 维护中 |
-| [**seer-unity-assets**](https://github.com/SeerAPI/seer-unity-assets) | 赛尔号 Unity 端静态资源节选 | Unity 资源 | ✅ 自动更新
-| [**api-data**](https://github.com/SeerAPI/api-data) | 处理后的 API 数据仓库 | JSON+Schema+DB | ✅ 自动更新 |
-
-### 🌐 API 服务
-
-| 仓库 | 描述 | 技术栈 | 状态 |
-|------|------|--------|------|
-| [**eo-seerapi**](https://github.com/SeerAPI/eo-seerapi) | 部署在腾讯云 EdgeOne Pages 的 API 服务 | TypeScript | ✅ 运行中 |
-
-### 📱 客户端 SDK
-
-| 仓库 | 描述 | 技术栈 | 状态 |
-|------|------|--------|------|
-| [**seerapi-python**](https://github.com/SeerAPI/seerapi-python) | 官方 Python 客户端库 | Python 3.10+, httpx | ✅ 活跃 |
-
-### ⚙️ 自动化
-
-| 仓库 | 描述 | 技术栈 | 状态 |
-|------|------|--------|------|
-| [**data-update-workflows**](https://github.com/SeerAPI/data-update-workflows) | 数据更新自动化工作流 | Python, GitHub Actions | ✅ 运行中 |
 
 ## 🚀 快速开始
 
@@ -101,6 +65,7 @@ SeerAPI 提供 **50+ 种游戏资源类型**，包括但不限于：
 - 📜 更多资源请查看[API 参考](https://api.seerapi.com/docs/v1/api_reference.html)，文档补充中...
 
 每个资源类型都有对应的Schema定义，访问[https://api.seerapi.com/v1/schemas/{resource_name}/$id](https://api.seerapi.com/v1/schemas/{resource_name}/$id)查看。
+
 ## 🤝 贡献
 
 我们欢迎所有形式的贡献！
@@ -108,8 +73,8 @@ SeerAPI 提供 **50+ 种游戏资源类型**，包括但不限于：
 ### 如何贡献
 
 1. **添加解析器**：Solaris 需要更多的数据解析器
-   - Fork [Solaris](https://github.com/SeerAPI/solaris) 仓库
-   - 在 `solaris/parse/parsers/` 下添加新解析器
+   - Fork [Solaris](https://github.com/SeerAPI/seerapi) 仓库
+   - 在 `package/solaris/parse/parsers/` 下添加新解析器
    - 提交 Pull Request
 
 2. **修复数据错误**：发现源数据错误？
